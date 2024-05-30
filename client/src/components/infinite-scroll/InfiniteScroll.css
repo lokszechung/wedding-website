@@ -1,0 +1,38 @@
+/* .moving-text{
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scrollbar-width: none;  
+} */
+
+/* .moving-text::-webkit-scrollbar {
+  display: none;
+} */
+
+.ven-text{
+  font-size: 4rem;
+  fill: #cf0b0b;
+  @media (max-width: 768px){
+    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+
+.the-curve{
+  height: 240px;
+  width: 100%;
+  transform: translateY(9px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 200%; */
+  /* overflow: visible; */
+  @media (max-width: 768px){
+    height: 213px;
+    transform: (6.3px);
+  }
+}
+
+/* .the-ven{
+  fill: #cf0b0b;
+} */
+

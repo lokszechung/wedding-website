@@ -1,0 +1,190 @@
+.ss2-content{
+  color: #CF0B0B;
+  padding: 3.3vmax 0;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(48, minmax(calc(min( 2606px , calc(100vw - 2vw * 2 - 0vw ))* 0.0215), auto));
+  grid-template-columns: minmax(calc( 2vw - 11.0px), 1fr) repeat(24, minmax(0, calc( ( 2606px - (11.0px * (24 - 1)) ) / 24 ))) minmax(calc( 2vw - 11.0px), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+
+  @media (max-width: 768px){
+    grid-template-rows: repeat(59, minmax(24px, auto));
+    grid-template-columns: minmax(calc( 6vw - 11.0px), 1fr) repeat(8, minmax(0, calc( ( 2606px - (11.0px * (8 - 1)) ) / 8 ))) minmax(calc( 6vw - 11.0px), 1fr);
+  }
+}
+
+.ss2-img-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ss2-img{
+  display: block;
+  object-fit: contain;
+  object-position: 50% 50%;
+  height: 100%;
+  left: 0;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sunday-title h4, .monday-title h4, .tuesday-title h4, .wednesday-title h4{
+  font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4em * (1 + (1 - 1.6)/25));
+  margin-bottom: 2rem;
+}
+
+.sunday-title h3, .monday-title h3, .tuesday-title h3, .wednesday-title h3{
+  font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4em * (1 + (1 - 2.2)/25));
+  margin: 0;
+}
+
+.sunday-title, .monday-title, .tuesday-title, .wednesday-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+
+  @media (max-width: 768px){
+    justify-content: flex-start;
+  }
+}
+
+.sunday-info, .monday-info, .tuesday-info, .wednesday-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sunday-info p, .sunday-info strong,
+.monday-info p, .monday-info strong,
+.tuesday-info p, .tuesday-info strong,
+.wednesday-info p{
+  font-family: "Poppins";
+  line-height: 1.8em;
+}
+
+.sunday-info p:nth-last-child(3)::before, 
+.monday-info p:nth-last-child(3)::before,
+.tuesday-info p:nth-last-child(3)::before{
+  content: "";
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.sunday-info p:nth-last-child(1), .sunday-info p:nth-last-child(2), 
+.monday-info p:nth-last-child(1), .monday-info p:nth-last-child(2),
+.tuesday-info p:nth-last-child(1), .tuesday-info p:nth-last-child(2),
+.wednesday-info p:nth-last-child(1), .wednesday-info p:nth-last-child(2){
+  text-align: center;
+  font-weight: 300;
+}
+
+/* SUNDAY */
+
+.sunday-title{
+  grid-area: 1 / 4 / 6 / 13;
+
+  @media (max-width: 768px){
+    grid-area: 1 / 2 / 5 / 10;
+  }
+}
+
+.sunday-info{
+  grid-area: 7 / 3 / 15 / 14;
+
+  @media (max-width: 768px){
+    grid-area: 5 / 2 / 14 / 10;
+  }
+}
+
+.ss2-img-div-1{
+  grid-area: 6 / 17 / 12 / 23;
+
+  @media (max-width: 768px){
+    grid-area: 14 / 4 / 17 / 8;
+  }
+}
+
+/* MONDAY */
+
+.monday-title{
+  grid-area: 16 / 16 / 20 / 25;
+
+  @media (max-width: 768px){
+    grid-area: 18 / 2 / 22 / 10;
+  }
+}
+
+.monday-info{
+  grid-area: 21 / 15 / 28 / 26;
+
+  @media (max-width: 768px){
+    grid-area: 22 / 2 / 30 / 10;
+  }
+}
+
+.ss2-img-div-2{
+  grid-area: 18 / 5 / 26 / 11;
+
+  @media (max-width: 768px){
+    grid-area: 30 / 4 / 32 / 8;
+  }
+}
+
+/* TUESDAY */
+
+.tuesday-title{
+  grid-area: 28 / 4 / 32 / 13;
+
+  @media (max-width: 768px){
+    grid-area: 33 / 2 / 37 / 10;
+  }
+}
+
+.tuesday-info{
+  grid-area: 33 / 4 / 41 / 14;
+
+  @media (max-width: 768px){
+    grid-area: 37 / 2 / 46 / 10;
+  }
+}
+
+.ss2-img-div-3{
+  grid-area: 31 / 19 / 40 / 22;
+
+  @media (max-width: 768px){
+    grid-area: 46 / 3 / 49 / 9;
+  }
+}
+
+/* WEDNESDAY */
+
+.wednesday-title{
+  grid-area: 41 / 16 / 45 / 25;
+
+  @media (max-width: 768px){
+    grid-area: 50 / 2 / 54 / 10;
+  }
+}
+
+.wednesday-info{
+  grid-area: 46 / 15 / 49 / 26;
+
+  @media (max-width: 768px){
+    grid-area: 54 / 2 / 59 / 10;
+  }
+}
+
+.ss2-img-div-4{
+  grid-area: 43 / 6 / 49 / 11;
+
+  @media (max-width: 768px){
+    grid-area: 58 / 3 / 60 / 9;
+  }
+}

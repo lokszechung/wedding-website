@@ -1,0 +1,150 @@
+.navbar{
+  padding: 2vw !important;
+  background-color: transparent !important;
+  position: absolute !important;
+  width: 100% !important;
+  top: 0 ! important;
+  @media (max-width: 768px){
+    padding: 6vw !important;
+  }
+}
+
+.navbar .container-fluid{
+  padding: 0 !important;
+}
+
+.navbar-brand{
+  font-size: calc((2 - 1) * 1.2vw + 1rem) !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4em !important;
+  letter-spacing: 0em !important;
+
+ @media (max-width: 768px){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem !important;
+ }
+}
+
+.nav-link{
+  font-size: 1rem !important;
+  padding: 1.6px 0 !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200 !important;
+  line-height: 1.8em;;
+}
+
+.nav-link:not(:first-child){
+  margin-left: 5vw !important;
+}
+
+.nav-link:last-child{
+  border: 1px solid white !important;
+  padding: 1.6px 10px !important;
+}
+
+.nav-link:hover{
+  color: white !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler{
+  border: none !important;
+  color: white !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url(../../assets/burger.svg) !important;
+}
+
+.offcanvas{
+  @media (max-width: 768px){
+    height: 100vh !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out !important;
+  }
+}
+
+.offcanvas-bg {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #F8E1DD !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-out !important;
+  pointer-events: none;
+  z-index: 900 !important; 
+}
+
+.offcanvas.show{
+  opacity: 1 !important;
+}
+
+.offcanvas-bg.show {
+  opacity: 1 !important;
+}
+
+.offcanvas-header{
+  padding: 2vw !important;
+  @media (max-width: 768px){
+    padding-top: 4vw !important;
+  }
+}
+
+.offcanvas-header .btn-close{
+  margin-left: 0px !important;
+  padding: 4px 12px !important;
+  margin: 0 0 0 12px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.offcanvas-header .btn-close:focus{
+  box-shadow: none !important;
+}
+
+.offcanvas-title{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  text-wrap: nowrap !important;
+  font-size: 1.5rem !important;
+}
+/* LOCATIIONS CSS SETTINGS */
+
+/* path: /schedule */
+
+.schedule .navbar-brand{
+  color: #CF0B0B !important;
+}
+
+.schedule .nav-link{
+  color: black !important;
+}
+
+.schedule .nav-link:last-child{
+  border: 1px solid black !important;
+}
+
+.schedule .navbar-toggler-icon{
+  background-image: url(../../assets/burger-black.svg) !important;
+}
+
+/* path: /venue */
+
+
