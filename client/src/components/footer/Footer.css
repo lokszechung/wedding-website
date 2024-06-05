@@ -53,9 +53,9 @@
   }
 }
 
-/* .footer-contact-info p:nth-child(1){
+.footer-contact-info p:nth-child(1){
   font-weight: 400 !important;
-} */
+}
 
 .footer-contact-info p:not(:nth-child(1)){
   font-size: calc((.9 - 1) * 1.2vw + 1rem);
@@ -72,6 +72,7 @@
 .footer p {
   font-family: "Poppins";
   line-height: 1.8em;
+  font-weight: 300;
 }
 
 .footer a{

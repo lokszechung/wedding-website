@@ -1,5 +1,7 @@
 import "./HomeSection1.css";
 import Navbar from "../../../components/navbar/NavBar";
+import hevlokYoung from "../../../assets/hevlok-young.jpeg";
+import hevlok from "../../../assets/hevlok.jpeg";
 
 const HomeSection1 = () => {
 	return (
@@ -17,9 +19,7 @@ const HomeSection1 = () => {
 				<div className="arch-shape arch-shape-1">
 					<img
 						className="hs1-img hs1-img-1 arch-img"
-						src={
-							"https://images.squarespace-cdn.com/content/v1/663a8c05772a830cd9dd9e5a/503d7586-9118-4856-b14b-7081079fae9e/721eb08a-b073-4c5b-ab82-b65e49a93be6.jpg"
-						}
+						src={hevlokYoung}
 						alt="img-1"
 						style={{ clipPath: "url(#archClip)" }}
 					/>
@@ -27,9 +27,7 @@ const HomeSection1 = () => {
 				<div className="arch-shape arch-shape-2">
 					<img
 						className="hs1-img hs1-img-2"
-						src={
-							"https://images.squarespace-cdn.com/content/v1/663a8c05772a830cd9dd9e5a/33b38030-197b-44d8-a573-e891a82b344e/IMG_2387.jpg"
-						}
+						src={hevlok}
 						alt="img-2"
 						style={{ clipPath: "url(#archClip)" }}
 					/>

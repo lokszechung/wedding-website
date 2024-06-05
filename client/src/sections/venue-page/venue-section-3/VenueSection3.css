@@ -1,0 +1,142 @@
+.vs3-section{
+  position: relative;
+  /* padding-bottom: 2vw; */
+}
+
+.vs3-content{
+  padding: 3.3vmax 0;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(17, minmax(calc(min( 2606px , calc(100vw - 2vw * 2 - 0vw ))* 0.0215), auto));
+  grid-template-columns: minmax(calc( 2vw - 11.0px), 1fr) repeat(24, minmax(0, calc( ( 2606px - (11.0px * (24 - 1)) ) / 24 ))) minmax(calc( 2vw - 11.0px), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+
+  @media (max-width: 768px){
+    grid-template-rows: repeat(29, minmax(24px, auto));
+    grid-template-columns: minmax(calc( 6vw - 11.0px), 1fr) repeat(8, minmax(0, calc( ( 2606px - (11.0px * (8 - 1)) ) / 8 ))) minmax(calc( 6vw - 11.0px), 1fr);
+  }
+}
+
+.vs3-content h1{
+  grid-area: 2 / 2 / 5 / 19;
+  font-size: calc((4 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4em * (1 + (1 - 4)/25));
+  @media (max-width: 768px){
+    grid-area: 2 / 2 / 4 / 10;
+    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    line-height: calc(1.4em * (1 + (1 - 4)/25));
+  }
+}
+
+.vs3-content p{
+  font-family: "Poppins";
+  line-height: 1.8em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.vs3-content h4{
+  font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4em * (1 + (1 - 1.6)/25));
+  margin-bottom: 2rem;
+  @media (max-width: 768px){
+    font-size: calc((1.6 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    line-height: calc(1.4em * (1 + (1 - 1.6)/25));
+  }
+}
+
+.vs3-content > p:nth-of-type(1){
+  grid-area: 5 / 2 / 6 / 9;
+  @media (max-width: 768px){
+    grid-area: 5 / 2 / 7 / 10;
+  }
+}
+
+.airport-info{
+  grid-area: 7 / 2 / 10 / 10;
+  @media (max-width: 768px){
+    grid-area: 7 / 2 / 11 / 10;
+  }
+}
+
+.train-info{
+  grid-area: 7 / 10 / 11 / 18;
+  @media (max-width: 768px){
+    grid-area: 11 / 2 / 16 / 10;
+  }
+}
+
+.shuttle-info{
+  grid-area: 7 / 18 / 11 / 26;
+  @media (max-width: 768px){
+    grid-area: 16 / 2 / 21 / 10;
+  }
+}
+
+.vs3-content > p:nth-of-type(2){
+  grid-area: 12 / 2 / 13 / 9;
+  @media (max-width: 768px){
+    grid-area: 22 / 2 / 24 / 10;
+  }
+}
+
+.taxi-info{
+  grid-area: 13 / 2 / 18 / 10;
+  @media (max-width: 768px){
+    grid-area: 24 / 2 / 30 / 10;
+  }
+}
+
+.vs3-svg{
+  display: block;
+}
+
+.vs3-divider-container{
+  position: relative;
+  background-color: #F8E1DD;
+  height: 2vw;
+  width: 100%;
+  position: relative;
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* overflow: visible; */
+}
+
+.vs3-divider{
+  background-color: white;
+  height: 2vw;
+  width: 100%;
+  clip-path: url(#vs3Clip);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.vs3-svg-stroke{
+  z-index: 100;
+  stroke-width: 0.007px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+
+  @media (min-width: 500px){stroke-width: 0.0065px;}
+  @media (min-width: 600px){stroke-width: 0.006px;}
+  @media (min-width: 700px){stroke-width: 0.0055px;}
+  @media (min-width: 800px){stroke-width: 0.005px;}
+  @media (min-width: 900px){stroke-width: 0.0045px;}
+  @media (min-width: 1100px){stroke-width: 0.004px;}
+  @media (min-width: 1200px){stroke-width: 0.0035px;}
+  @media (min-width: 1300px){stroke-width: 0.003px;}
+  @media (min-width: 1400px){stroke-width: 0.0025px;}
+  @media (min-width: 1500px){stroke-width: 0.002px;}
+}
