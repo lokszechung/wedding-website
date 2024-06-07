@@ -1,0 +1,99 @@
+.ttds1-section{
+  padding-top: calc((1.4 * calc((2 - 1) * 1.2vw + 1rem)) + 4vw); /* to accomodate the navbar */
+  @media (max-width: 768px){
+    padding-top: calc((1.4 * calc((2 - 1) * 1.2vw + 1rem)) + 12vw);
+  }
+}
+
+.ttds1-content{
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(17, minmax(calc(min( 2606px , calc(100vw - 2vw * 2 - 0vw ))* 0.0215), auto));
+  grid-template-columns: minmax(calc( 2vw - 11.0px), 1fr) repeat(24, minmax(0, calc( ( 2606px - (11.0px * (24 - 1)) ) / 24 ))) minmax(calc( 2vw - 11.0px), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+
+  @media (max-width: 768px){
+    grid-template-rows: repeat(40, minmax(24px, auto));
+    grid-template-columns: minmax(calc( 6vw - 11.0px), 1fr) repeat(8, minmax(0, calc( ( 2606px - (11.0px * (8 - 1)) ) / 8 ))) minmax(calc( 6vw - 11.0px), 1fr);
+  }
+}
+
+.ttds1-content h1{
+  grid-area: 2 / 5 / 5 / 11;
+  color: #CF0B0B;
+  text-align: center;
+  align-content: center;
+  font-size: calc(2.69vw + (calc(100vw - 1000px)*0.0016));
+
+  @media (max-width: 768px){
+    grid-area: 1 / 2 / 5 / 10;
+    font-size: calc(10.04vw + (calc(100vw - 500px)*0.0036));
+  }
+}
+
+.ttds1-content hr{
+  grid-area: 5 / 2 / 6 / 13;
+  border: none;
+  background-color: #CF0B0B;
+  height: 1px;
+  opacity: 1;
+
+  @media (max-width: 768px){
+    grid-area: 5 / 2 / 6 / 10;
+  }
+}
+
+.things-to-do-list{
+  grid-area: 7 / 2 / 17 / 13;
+  @media (max-width: 768px){
+    grid-area: 6 / 2 / 24 / 10;
+    margin-top: 16px;
+  }
+}
+
+.things-to-do-list p{
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 1.8em;
+  margin-bottom: 8px;
+}
+
+.things-to-do-list strong{
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.things-to-do-list > p{
+  margin-bottom: 16px;
+}
+
+.ttds1-img-div{
+  position: relative;
+}
+
+.ttds1-img{
+  display: block;
+  object-fit: contain;
+  object-position: 50% 50%;
+  height: 100%;
+  left: 0;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.ttds1-img-div-1{
+  grid-area: 5 / 15 / 10 / 25;
+  @media (max-width: 768px){
+    grid-area: 26 / 2 / 32 / 10;
+  }
+}
+
+.ttds1-img-div-2{
+  grid-area: 10 / 16 / 17 / 24;
+  @media (max-width: 768px){
+    grid-area: 33 / 2 / 40 / 10;
+  }
+}

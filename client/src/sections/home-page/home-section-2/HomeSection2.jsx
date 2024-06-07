@@ -2,6 +2,7 @@ import "./HomeSection2.css";
 import circle2 from "../../../assets/circle2.svg";
 import farfelle from "../../../assets/farfelle.png";
 import pizza from "../../../assets/pizza.png";
+import { Link } from "react-router-dom";
 
 const HomeSection2 = () => {
 	return (
@@ -26,7 +27,7 @@ const HomeSection2 = () => {
 				<img className="hs2-img hs2-img-2" src={pizza} alt="pizza" />
 			</div>
 			<div className="rsvp-btn">
-				<a href="/rsvp">RSVP</a>
+				<Link to="/rsvp">RSVP</Link>
 			</div>
 			{/* </div> */}
 		</section>

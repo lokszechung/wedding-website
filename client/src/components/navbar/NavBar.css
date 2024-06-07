@@ -138,32 +138,37 @@
 
 /* path: /schedule & /rsvp */
 
-.schedule .navbar-brand{
+.schedule .navbar-brand, .things-to-do .navbar-brand{
   color: #CF0B0B !important;
 }
 
-.rsvp .navbar-brand{
+.rsvp .navbar-brand, .faq .navbar-brand{
   color: black !important;
 }
 
 .schedule .nav-link, .schedule .navlink,
-.rsvp .nav-link, .rsvp .navlink{
+.rsvp .nav-link, .rsvp .navlink,
+.things-to-do .nav-link, .things-to-do .navlink,
+.faq .nav-link, .faq .navlink{
   color: black !important;
 }
 
 .schedule .nav-link:last-child, 
-.rsvp .nav-link:last-child{
+.rsvp .nav-link:last-child,
+.things-to-do .nav-link:last-child,
+.faq .nav-link:last-child{
   border: 1px solid black !important;
 }
 
-.schedule .active, .rsvp .active{
+.schedule .active, .rsvp .active, .things-to-do .active, .faq .active{
   background-image: linear-gradient(black, black) !important;
   background-repeat: repeat-x !important;
   background-size: 1px 1px !important;
   background-position: 0 calc(100% - 0.1rem) !important;
 }
 
-.schedule .navbar-toggler-icon, .rsvp .navbar-toggler-icon{
+.schedule .navbar-toggler-icon, .rsvp .navbar-toggler-icon,
+.things-to-do .navbar-toggler-icon, .faq .navbar-toggler-icon{
   background-image: url(../../assets/burger-black.svg) !important;
 }
 

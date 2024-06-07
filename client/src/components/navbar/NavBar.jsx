@@ -82,8 +82,22 @@ const NavBar = ({ location }) => {
 								Venue
 							</Link>
 							{/* </Nav.Link> */}
-							{/* <Nav.Link>Things to do</Nav.Link> */}
-							{/* <Nav.Link>FAQs</Nav.Link> */}
+							<Link
+								className={`nav-link navlink ${
+									pathname === "/things-to-do" ? "active" : ""
+								}`}
+								to="/things-to-do"
+							>
+								Things to do
+							</Link>
+							<Link
+								className={`nav-link navlink ${
+									pathname === "/faq" ? "active" : ""
+								}`}
+								to="/faq"
+							>
+								FAQs
+							</Link>
 							<a
 								className="nav-link"
 								href="https://www.weddingpresentco.com/find-list/184158/"

@@ -5,6 +5,8 @@ import loksDrinksWine from "../../../assets/loks-wine.mp4";
 import bottle from "../../../assets/bottle.png";
 import wineglass from "../../../assets/wineglass.png";
 
+import { Link } from "react-router-dom";
+
 const HomeSection3 = () => {
 	return (
 		<section className="hs3-section">
@@ -36,7 +38,7 @@ const HomeSection3 = () => {
 				</p>
 			</div>
 			<div className="schedule-btn">
-				<a href="/schedule">THE SCHEDULE</a>
+				<Link to="/schedule">THE SCHEDULE</Link>
 			</div>
 		</section>
 	);
