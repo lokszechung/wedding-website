@@ -50,23 +50,38 @@ const NavBar = ({ location }) => {
 					</Offcanvas.Header>
 					<Offcanvas.Body>
 						<Nav className="justify-content-end flex-grow-1">
-							<Nav.Link className={`${pathname === "home" ? "active" : ""}`}>
-								<Link className={`navlink`} to="/">
-									Home
-								</Link>
-							</Nav.Link>
-							<Nav.Link
-								className={`${pathname === "/schedule" ? "active" : ""}`}
+							{/* <Nav.Link className={`${pathname === "home" ? "active" : ""}`}> */}
+							<Link
+								className={`nav-link navlink ${
+									pathname === "home" ? "active" : ""
+								}`}
+								to="/"
 							>
-								<Link className={`navlink`} to="/schedule">
-									Schedule
-								</Link>
-							</Nav.Link>
-							<Nav.Link className={`${pathname === "/venue" ? "active" : ""}`}>
-								<Link className={`navlink`} to="/venue">
-									Venue
-								</Link>
-							</Nav.Link>
+								Home
+							</Link>
+							{/* </Nav.Link> */}
+							{/* <Nav.Link
+								className={`${pathname === "/schedule" ? "active" : ""}`}
+							> */}
+							<Link
+								className={`nav-link navlink ${
+									pathname === "/schedule" ? "active" : ""
+								}`}
+								to="/schedule"
+							>
+								Schedule
+							</Link>
+							{/* </Nav.Link> */}
+							{/* <Nav.Link className={`${pathname === "/venue" ? "active" : ""}`}> */}
+							<Link
+								className={`nav-link navlink ${
+									pathname === "/venue" ? "active" : ""
+								}`}
+								to="/venue"
+							>
+								Venue
+							</Link>
+							{/* </Nav.Link> */}
 							{/* <Nav.Link>Things to do</Nav.Link> */}
 							{/* <Nav.Link>FAQs</Nav.Link> */}
 							<a
@@ -76,11 +91,16 @@ const NavBar = ({ location }) => {
 							>
 								Registry
 							</a>
-							<Nav.Link>
-								<Link className={`navlink`} to="/rsvp">
-									RSVP
-								</Link>
-							</Nav.Link>
+							{/* <Nav.Link> */}
+							<Link
+								className={`nav-link navlink ${
+									pathname === "/rsvp" ? "active" : ""
+								}`}
+								to="/rsvp"
+							>
+								RSVP
+							</Link>
+							{/* </Nav.Link> */}
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>

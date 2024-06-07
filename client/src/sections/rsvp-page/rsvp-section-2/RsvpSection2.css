@@ -278,3 +278,39 @@ input[type="checkbox"]:checked{
   top: 0;
   width: 100%;
 }
+
+.error-msg{
+  background-color: #ce2c30;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 1.8em;
+  font-weight: 400;
+  margin: 0 0 4px;
+  padding: 6px 10px;
+
+  display: flex;
+  align-items: flex-start;
+  column-gap: 10px;
+}
+
+.error-icon{
+  margin: auto 0;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.rsvp-error{
+  margin-top: 20px;
+}
+
+.form-submitted-msg{
+  margin-top: 20px;
+}
+
+.form-submitted-msg p{
+  font-family: "Poppins";
+  line-height: 1.8em;
+  font-weight: 300;
+  margin: 16px 0;
+}

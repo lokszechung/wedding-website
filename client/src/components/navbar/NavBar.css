@@ -167,6 +167,13 @@
   background-image: url(../../assets/burger-black.svg) !important;
 }
 
-/* path: /venue */
+/* path: /rsvp */
+
+.rsvp .nav-link.active{
+  border: 1px solid #CF0B0B !important;
+  background-image: none !important;
+  background-color: #F8E1DD;
+  color: #CF0B0B !important;
+}
 
 
