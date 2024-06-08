@@ -30,22 +30,60 @@
  }
 }
 
-.nav-link, .navlink, .nav-link a{
+.nav-link, .navlink, .nav-link a, .nav-item-content{
   font-size: 1rem !important;
   padding: 0.1em 0 !important;
   font-family: "Poppins", sans-serif;
   font-weight: 300 !important;
   line-height: 1.8em;
   text-decoration: none;
+  
+  @media (max-width: 768px){
+    color: black !important;
+    font-size: 6.6vmin !important;
+    /* line-height: 1.3em; */
+  }
+
+  @media (max-width: 576px){
+    font-size: 8.5vmin !important;
+    /* line-height: 1.3em; */
+  }
 }
 
 .nav-link:not(:first-child){
   margin-left: 5vw !important;
 }
 
+.nav-link, .nav-item-content{
+  @media (max-width: 768px){
+    margin-left: 5vw !important;
+    margin-top: 2.5vw !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+}
+
+.nav-item-content{
+  display: inline-block;
+  margin: 0 !important;
+}
+
 .nav-link:last-child{
   border: 1px solid white !important;
   padding: 1.6px 10px !important;
+
+  @media (max-width: 768px){
+    border: none !important;
+    padding: 0 !important;
+  }
+}
+
+.offcanvas-body{
+  @media (max-width: 768px){
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 0 !important; 
+  }
 }
 
 /* .nav-link:hover{
@@ -56,11 +94,15 @@
   color: white !important;
 }
 
-.active{
+.active > .nav-item-content{
   background-image: linear-gradient(white, white) !important;
   background-repeat: repeat-x !important;
   background-size: 1px 1px !important;
   background-position: 0 calc(100% - 0.1rem) !important;
+
+  @media (max-width: 768px){
+    background-image: linear-gradient(black, black) !important;
+  }
 }
 
 .navbar-toggler{
@@ -107,22 +149,32 @@
 }
 
 .offcanvas-header{
-  padding: 2vw !important;
+  /* padding: 2vw !important;
   @media (max-width: 768px){
     padding-top: 4vw !important;
-  }
+  } */
+  /* height: 100% !important; */
+  /* display: flex !important;
+  align-items: center !important; */
+  padding: 6vw !important;
 }
 
-.offcanvas-header .btn-close{
+.btn-close{
   margin-left: 0px !important;
-  padding: 4px 12px !important;
-  margin: 0 0 0 12px !important;
+  margin: 4px 12px !important;
+  /* margin: 0 0 0 12px !important; */
+  padding: 0 !important;
   height: 30px !important;
   width: 30px !important;
+  background-image: url(../../assets/cross.svg) !important;
 }
 
-.offcanvas-header .btn-close:focus{
+.btn-close:focus{
   box-shadow: none !important;
+  outline-style: solid !important;
+  outline-color: black !important;
+  outline-width: 2px !important;
+  outline-offset: -8px !important;
 }
 
 .offcanvas-title{
@@ -130,7 +182,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   text-wrap: nowrap !important;
   font-size: 1.5rem !important;
 }
@@ -160,12 +212,19 @@
   border: 1px solid black !important;
 }
 
-.schedule .active, .rsvp .active, .things-to-do .active, .faq .active{
+.schedule .active > .nav-item-content, .rsvp .active > .nav-item-content, 
+.things-to-do .active > .nav-item-content, .faq .active > .nav-item-content{
   background-image: linear-gradient(black, black) !important;
   background-repeat: repeat-x !important;
   background-size: 1px 1px !important;
   background-position: 0 calc(100% - 0.1rem) !important;
 }
+
+/* .rsvp .active > .nav-item-content{
+  @media (min-width: 768px){
+    background-image: none !important;
+  }
+} */
 
 .schedule .navbar-toggler-icon, .rsvp .navbar-toggler-icon,
 .things-to-do .navbar-toggler-icon, .faq .navbar-toggler-icon{

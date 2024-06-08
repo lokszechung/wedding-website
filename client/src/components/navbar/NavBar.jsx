@@ -31,7 +31,7 @@ const NavBar = ({ location }) => {
 			// className="mb-0 navbar"
 		>
 			<Container fluid>
-				<Navbar.Brand>HevLok Wedding</Navbar.Brand>
+				<Navbar.Brand href="/">HevLok Wedding</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls={`offcanvasNavbar-expand-${expand}`}
 					onClick={handleShow}
@@ -49,46 +49,38 @@ const NavBar = ({ location }) => {
 						</Offcanvas.Title>
 					</Offcanvas.Header>
 					<Offcanvas.Body>
-						<Nav className="justify-content-end flex-grow-1">
-							{/* <Nav.Link className={`${pathname === "home" ? "active" : ""}`}> */}
+						<Nav className="justify-content-end flex-grow-1 flex-wrap">
 							<Link
 								className={`nav-link navlink ${
 									pathname === "home" ? "active" : ""
 								}`}
 								to="/"
 							>
-								Home
+								<div className="nav-item-content">Home</div>
 							</Link>
-							{/* </Nav.Link> */}
-							{/* <Nav.Link
-								className={`${pathname === "/schedule" ? "active" : ""}`}
-							> */}
 							<Link
 								className={`nav-link navlink ${
 									pathname === "/schedule" ? "active" : ""
 								}`}
 								to="/schedule"
 							>
-								Schedule
+								<div className="nav-item-content">Schedule</div>
 							</Link>
-							{/* </Nav.Link> */}
-							{/* <Nav.Link className={`${pathname === "/venue" ? "active" : ""}`}> */}
 							<Link
 								className={`nav-link navlink ${
 									pathname === "/venue" ? "active" : ""
 								}`}
 								to="/venue"
 							>
-								Venue
+								<div className="nav-item-content">Venue</div>
 							</Link>
-							{/* </Nav.Link> */}
 							<Link
 								className={`nav-link navlink ${
 									pathname === "/things-to-do" ? "active" : ""
 								}`}
 								to="/things-to-do"
 							>
-								Things to do
+								<div className="nav-item-content">Things to do</div>
 							</Link>
 							<Link
 								className={`nav-link navlink ${
@@ -96,25 +88,23 @@ const NavBar = ({ location }) => {
 								}`}
 								to="/faq"
 							>
-								FAQs
+								<div className="nav-item-content">FAQs</div>
 							</Link>
 							<a
 								className="nav-link"
 								href="https://www.weddingpresentco.com/find-list/184158/"
 								target="_blank"
 							>
-								Registry
+								<div className="nav-item-content">Registry</div>
 							</a>
-							{/* <Nav.Link> */}
 							<Link
 								className={`nav-link navlink ${
 									pathname === "/rsvp" ? "active" : ""
 								}`}
 								to="/rsvp"
 							>
-								RSVP
+								<div className="nav-item-content">RSVP</div>
 							</Link>
-							{/* </Nav.Link> */}
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>
