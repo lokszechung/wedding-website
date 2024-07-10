@@ -220,11 +220,11 @@
   background-position: 0 calc(100% - 0.1rem) !important;
 }
 
-/* .rsvp .active > .nav-item-content{
+.rsvp .active > .nav-item-content{
   @media (min-width: 768px){
     background-image: none !important;
   }
-} */
+}
 
 .schedule .navbar-toggler-icon, .rsvp .navbar-toggler-icon,
 .things-to-do .navbar-toggler-icon, .faq .navbar-toggler-icon{
