@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -7,7 +8,7 @@ const Footer = () => {
 			<div className="footer-dates-info">
 				<p>6—9th October 2024</p>
 				<p>
-					<a href="/RSvP">RSVP</a>
+					<Link to="/rsvp">RSVP</Link>
 				</p>
 			</div>
 			<div className="footer-contact-info">
