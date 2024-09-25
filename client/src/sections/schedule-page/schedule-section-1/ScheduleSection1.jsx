@@ -1,5 +1,6 @@
 import NavBar from "../../../components/navbar/NavBar";
 import "./ScheduleSection1.css";
+import weddingItinerary from "/wedding-itinerary.pdf";
 
 const ScheduleSection1 = () => {
 	return (
@@ -9,8 +10,15 @@ const ScheduleSection1 = () => {
 				<div className="ss1-heading">
 					<h2>the schedule.</h2>
 					<p>
-						Here&apos;s our rough schedule. More details will be added as our
-						plans firm up.
+						Check out our{" "}
+						<a
+							href={weddingItinerary}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							wedding itinerary
+						</a>
+						!
 					</p>
 					<p>We can&apos;t wait to celebrate with you!</p>
 				</div>

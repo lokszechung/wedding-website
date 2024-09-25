@@ -53,3 +53,9 @@
 .ss1-heading p:last-child{
   margin: 0;
 }
+
+.ss1-heading a{
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 1.8em;
+}
